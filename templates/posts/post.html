@@ -33,7 +33,10 @@
         </each>
       </ul>
 
-      <if condition="_currentPage.page > 1">
+      <if condition="_currentPage.page === 2">
+        <a href="/posts/">Back</a>
+      </if>
+      <if condition="_currentPage.page > 1 && _currentPage.page !== 2">
         <a href="{{ _currentPage.page-1 }}">Back</a>
       </if>
       <if condition="_currentPage.page < _pages.posts.length">
