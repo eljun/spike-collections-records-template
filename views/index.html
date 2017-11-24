@@ -1,0 +1,29 @@
+<extends src='layout.html'>
+  <block name='content'>
+    <h1>My Cool Blog</h1>
+
+    <pre style="max-width: 800px; table-layout: fixed">
+      {{ JSON.stringify(site) }}
+    </pre>
+    <br />
+    <pre style="width: 100%">
+      {{ JSON.stringify(_collections) }}
+    </pre>
+    <br />
+    <pre style="width: 100%">
+      {{ JSON.stringify(_currentPage) }}
+    </pre>
+
+    <ul>
+      <each loop="post, index of _collections.posts">
+        <li>
+          <a href='{{ post._path }}'>{{ post.title }}</a>
+        </li>
+      </each>
+    </ul>
+
+    <!-- <if condition='_collections.posts[1]'>
+      <a href='{{ _collections.posts[1].path }}'>Next Page &raquo;</a>
+    </if> -->
+  </block>
+</extends>
