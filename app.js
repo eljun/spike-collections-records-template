@@ -16,7 +16,12 @@ const collections = new Collections({
       paginate: {
         perPage: 1,
         template: 'templates/posts/post.html',
-        output: n => `posts/page${n}.html`
+        output: n => {
+          if (n === 1) {
+            return `posts/index.html`
+          }
+          return `posts/${n}.html`
+        } 
       }
     }
   }

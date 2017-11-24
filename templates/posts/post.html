@@ -21,6 +21,10 @@
   <body>
     <main id='{{ pageId }}'>
       <h1>Posts: Page {{ _currentPage.page }}</h1>
+  
+      <pages retext-skip>{{{ JSON.stringify(_pages) }}}</pages>
+      <current retext-skip>{{{ JSON.stringify(_currentPage) }}}</current>
+
       <ul>
         <each loop='post in _currentPage.posts'>
           <li>
@@ -28,8 +32,13 @@
           </li>
         </each>
       </ul>
-      <pages retext-skip>{{{ JSON.stringify(_pages) }}}</pages>
-      <current retext-skip>{{{ JSON.stringify(_currentPage) }}}</current>
+
+      <if condition="_currentPage.page > 1">
+        <a href="{{ _currentPage.page-1 }}">Back</a>
+      </if>
+      <if condition="_currentPage.page < _pages.posts.length">
+        <a href="{{ _currentPage.page+1 }}">Next</a>
+      </if>
     </main>
 
     <block name='javascript'>
