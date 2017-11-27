@@ -1,3 +1,10 @@
+backend:
+  name: github-api #netlify-api
+  repo: dorelljames/spike-collections-records-template
+  branch: master
+  endpoint: https://webriq-portal.dev/api/
+  #url: http://localhost:8080
+
 production:
   backend:
     name: github-api
