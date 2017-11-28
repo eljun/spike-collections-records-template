@@ -1,19 +1,9 @@
 <extends src='layout.html'>
   <block name='content'>
-    <h1>My Cool Blog</h1>
-
-    <pre style="max-width: 800px; table-layout: fixed">
-      {{ JSON.stringify(site) }}
-    </pre>
+    <h1>{{ site.sitedata[0].sitename }}</h1>
+    <p>{{ site.sitedata[0].metadesc }}</p>
     <br />
-    <pre style="width: 100%">
-      {{ JSON.stringify(_collections) }}
-    </pre>
-    <br />
-    <pre style="width: 100%">
-      {{ JSON.stringify(_currentPage) }}
-    </pre>
-
+    <h2>Recent Blogs:</h2>
     <ul>
       <each loop="post, index of _collections.posts">
         <li>
@@ -21,9 +11,5 @@
         </li>
       </each>
     </ul>
-
-    <!-- <if condition='_collections.posts[1]'>
-      <a href='{{ _collections.posts[1].path }}'>Next Page &raquo;</a>
-    </if> -->
   </block>
 </extends>
