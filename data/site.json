@@ -1,14 +1,1 @@
-{
-    "sitedata": [
-        {
-            "footer": "All rights reserved! 2017 WebriQ Pte Ltd",
-            "icon": "/img/favico.png",
-            "logo": "/img/small-logo2.png",
-            "metadesc": "WebriQ Spike Template",
-            "metakeyword": "cms",
-            "metauthor": "webriq",
-            "sitename": "WebriQ Starter"
-        }
-    ],
-    "updatedDate": "2016-12-09T03:22:38.944Z"
-}
+{"sitedata":[{"icon":"/img/favicon.png","logo":"/img/logo-webservices.png","sitename":"WebriQ Starter","metadesc":"WebriQ Spike Template","metauthor":"WebriQ","metakeyword":"cms","footer":"All rights reserved! 2017 WebriQ Pte Ltd"}],"updatedDate":"2017-11-28T06:24:37.530Z"}
