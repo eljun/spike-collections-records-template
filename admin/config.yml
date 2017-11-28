@@ -50,6 +50,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Author", name: "author", widget: "string"}
       - {label: "Tags", name: "leadtag", widget: "string"}
+      - {label: "Meta Description", name="metadesc", widget="string"}
+      - {label: "Meta Keywords", name="metakeywords", widget="string"}
       - {label: "Banner", name: "banner", widget: "image", class: "image thumbnail", media_folder: "assets/img/uploads"}
 
   - name: "filemanager"
