@@ -1,11 +1,13 @@
 ---
 title: Spike Best CMS For Your Business Blog
 shortdesc: Starting a business blog? Wondering how to pick the best CMS (Content Management System) for it? One of the top ways for your business to drive traffic to your website is through an engaging and optimized blog.
-updatedDate: 2017-11-28T06:22:22.255Z
+updatedDate: 2017-11-28T08:29:40.055Z
 cmsUserSlug: ""
-date: 2017-11-28 
+date: 2017-11-28T00:00:00.000Z
 author: WebriQ
 leadtag: null
+metadesc: Starting a business blog? Wondering how to pick the best CMS
+metakeywords: "Cms, Blogging, bussiness"
 banner: /img/uploads/dji_0001.jpg
 ---
 
